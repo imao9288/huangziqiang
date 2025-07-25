@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送你一束花</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            text-align: center;
+            background: #fff5f7;
+            padding: 20px;
+            color: #e75480;
+        }
+        .flower {
+            font-size: 50px;
+            margin: 30px 0;
+            animation: swing 2s infinite alternate;
+        }
+        .message {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        @keyframes swing {
+            from { transform: rotate(-5deg); }
+            to { transform: rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>💐 送给特别的你 💐</h1>
+    
+    <div class="flower">
+        🌹<br>
+        @}->--<br>
+        🌷
+    </div>
+    
+    <div class="message">
+        <p>亲爱的朋友：</p>
+        <p>虽然不能亲手送你鲜花，</p>
+        <p>但这份心意希望能通过屏幕传递给你～</p>
+        <p>愿你每天都有好心情！</p>
+    </div>
+    
+    <div style="margin-top: 30px;">
+        <img src="https://via.placeholder.com/300x200/ffcce6/ffffff?text=虚拟花束" alt="花束图片" style="max-width: 80%; border-radius: 10px;">
+    </div>
+    
+    <script>
+        // 简单的交互效果
+        document.querySelector('.flower').onclick = function() {
+            this.innerHTML = '🌹<br>@}->--<br>🌷<br>🌸 谢谢你！ 🌸';
+        };
+    </script>
+</body>
+</html>
